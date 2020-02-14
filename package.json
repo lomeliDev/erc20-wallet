@@ -1,6 +1,6 @@
 {
     "name": "erc20-wallet",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Paquete para wallets erc20",
     "main": "build/index.js",
     "repository": {
@@ -16,7 +16,8 @@
         "prebuild": "npm run lint",
         "build": "babel lib --out-dir build",
         "pretest": "npm run build",
-        "test": "babel-node test/index.js | tap-spec"
+        "test": "babel-node test/index.js | tap-spec",
+        "prepublish": "npm run test"
     },
     "keywords": [
         "erc20",
