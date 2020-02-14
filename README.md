@@ -62,6 +62,12 @@ Ahora nos toca crear las direcciones de ethereum , aqui debemos definir la canti
 
 ```js
 erc20.numAddr = 10;
+
+await erc20.generateAddress().then((response) => {
+     erc20.address = response;
+}).catch((error) => {
+     console.error(error);
+});
 ```
 
 Esto nos creara 10 wallets y nos regresara un json de la siguiente manera:
