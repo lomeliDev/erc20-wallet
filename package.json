@@ -1,6 +1,6 @@
 {
     "name": "erc20-wallet",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Paquete para wallets erc20",
     "main": "build/index.js",
     "repository": {
@@ -12,9 +12,9 @@
     },
     "homepage": "https://github.com/lomeliDev/erc20-wallet#readme",
     "scripts": {
-        "lint": "eslint lib/index.js",        
+        "lint": "eslint lib/index.js",
         "prebuild": "npm run lint",
-        "build": "babel lib --out-dir build",
+        "build": "babel lib --out-dir build --minified",
         "pretest": "npm run build",
         "test": "babel-node test/index.js | tap-spec",
         "prepublish": "npm run test"
@@ -34,12 +34,10 @@
         "miguel lomeli",
         "toopago"
     ],
-    "contributors": [
-        {
-            "name": "Miguel Lomeli",
-            "email": "miguel@lomeli.io"
-        }
-    ],
+    "contributors": [{
+        "name": "Miguel Lomeli",
+        "email": "miguel@lomeli.io"
+    }],
     "author": "Miguel Lomeli <miguel@lomeli.io> (https://lomeli.io/)",
     "license": "MIT",
     "devDependencies": {
