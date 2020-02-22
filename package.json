@@ -1,6 +1,6 @@
 {
     "name": "erc20-wallet",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Paquete para wallets erc20",
     "main": "build/index.js",
     "repository": {
