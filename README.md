@@ -239,7 +239,7 @@ Primero debemos crear una cuenta en etherscan.io y crear una api , o en su defec
 ```js
     erc20.apikeyEtherScan = 'YourApiKey';
     erc20.networkEtherScan = 'ropsten';
-    erc20.timeoutScan = '3000';
+    erc20.timeoutScan = 3000;
 ```
 Las redes que soporta son :
 **morden** //Esta es la mainet
